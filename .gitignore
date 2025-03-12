@@ -13,3 +13,6 @@ __pycache__/
 *.swo
 .DS_Store
 .env
+
+# Ignore database files
+*.db
