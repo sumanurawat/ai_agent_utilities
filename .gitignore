@@ -1,0 +1,15 @@
+# Ignore the virtual environment directory
+.venv/
+
+# Ignore the secrets file
+secret.py
+
+# Ignore other common files and directories
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.swo
+.DS_Store
+.env
