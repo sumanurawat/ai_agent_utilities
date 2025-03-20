@@ -4,6 +4,7 @@ install_requires = [
     "praw>=7.7.1",
     "pandas>=2.1.4",
     "python-dotenv>=1.0.0",
+    "ntscraper>=0.3.17",  # Updated to use the latest available version
 ]
 
 setup(

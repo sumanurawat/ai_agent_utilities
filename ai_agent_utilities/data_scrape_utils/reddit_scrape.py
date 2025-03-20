@@ -343,7 +343,7 @@ if __name__ == "__main__":
     sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
     
     # Create outputs directory if it doesn't exist
-    os.makedirs('outputs', exist_ok=True)
+    os.makedirs('outputs/reddit', exist_ok=True)
     
     """
     USAGE EXAMPLES
@@ -412,7 +412,7 @@ if __name__ == "__main__":
         limit=5,
         sort_by='top', # choices: 'hot', 'new', 'top', 'rising', 'controversial'
         time_filter='week', # choices: 'all', 'day', 'week', 'month', 'year'
-        output_file='outputs/investing_basic.csv'
+        output_file='outputs/reddit/investing_basic.csv'
     )
     
     # Example 2: Advanced usage - Search for Tesla-related posts with comments
@@ -425,7 +425,7 @@ if __name__ == "__main__":
         include_comments=True,
         comment_limit=3,
         min_score=10,
-        output_file='outputs/tesla_investing.csv'
+        output_file='outputs/reddit/tesla_investing.csv'
     )
     
     # Example 3: Custom fields and JSON output
@@ -445,12 +445,12 @@ if __name__ == "__main__":
     # Pretty format with indentation
     pretty_json = json.dumps(json_data, indent=4)
     # Save to file
-    json_output_file = 'outputs/wallstreetbets_custom.json'
+    json_output_file = 'outputs/reddit/wallstreetbets_custom.json'
     with open(json_output_file, 'w') as f:
         f.write(pretty_json)
     print(f"Saved pretty-printed JSON result to {json_output_file}")
     
-    print("\nAll examples completed. Check the 'outputs' directory for CSV files.")
+    print("\nAll examples completed. Check the 'outputs/reddit' directory for files.")
     
     # Example 4: Get detailed information with all comments
     print("\n=== Example 4: Detailed post information with full comments ===")
@@ -460,6 +460,6 @@ if __name__ == "__main__":
         sort_by='top',
         time_filter='week',
         comment_depth=3,  # Get 3 levels of nested comments
-        output_file='outputs/detailed_posts.json'
+        output_file='outputs/reddit/detailed_posts.json'
     )
     print(f"Retrieved {len(detailed_posts)} detailed posts with complete comment trees")
