@@ -6,9 +6,7 @@ secret.py
 
 # Ignore other common files and directories
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
 *.swp
 *.swo
 .DS_Store
@@ -16,3 +14,15 @@ __pycache__/
 
 # Ignore database files
 *.db
+
+# local development files
+local/secret.py
+
+# Ignore output files
+outputs/
+*.csv
+
+# Ignore Python packaging artifacts
+*.egg-info/
+dist/
+build/
