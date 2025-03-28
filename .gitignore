@@ -26,3 +26,30 @@ outputs/
 *.egg-info/
 dist/
 build/
+
+# Secret files
+**/secret.py
+**/*secret*.py
+**/secrets.py
+**/.env
+**/credentials*.json
+
+# Ignore files with secrets and API keys
+cloudrun/scratch.py
+**/scratch.py
+**/*scratch*.py
+**/secret.py
+**/*secret*.py
+.env
+**/.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Virtual environment
+.venv/
+venv/
+ENV/
